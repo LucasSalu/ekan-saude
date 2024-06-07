@@ -25,6 +25,8 @@ DELETE /api/beneficiarios/{id} - Remover um beneficiário
 
 GET api/documentos/beneficiario/{id} Obter documetos de um beneficiario.
 
+##Comandos
+
 cd ekan
 mvn spring-boot:run
 
