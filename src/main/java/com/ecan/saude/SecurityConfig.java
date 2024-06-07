@@ -20,12 +20,13 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(authz -> authz
-                .requestMatchers(""
-                		+"/v3/api-docs/**"
+                .requestMatchers(
+                		"/v3/api-docs/**"
                 		,"/h2-console/**"
                 		,"/swagger-ui/**"
                 		,"/api/documentos/**"
                 		,"/api/beneficiarios/**"
+                		
                 		).permitAll()
                 .anyRequest()
                 .authenticated()
@@ -42,8 +43,8 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
         UserDetails user = User.builder()
-                .username("salu")
-                .password(passwordEncoder.encode("123456"))
+                .username("adm")
+                .password(passwordEncoder.encode("adm"))
                 .roles("USER")
                 .build();
 
