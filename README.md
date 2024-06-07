@@ -47,3 +47,7 @@ http://localhost:8080/h2-console/
     }
   ]
 }
+
+## Login e Senha
+login:adm 
+senha:adm
