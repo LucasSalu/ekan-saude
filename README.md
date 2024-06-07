@@ -11,13 +11,14 @@ Esta aplicação é uma API REST para gerenciar beneficiários de um plano de sa
 1. Clone o repositório:
    https://github.com/LucasSalu/ekan-saude.git
 
-Endpoints
+##Endpoints
 Beneficiários
 POST /api/beneficiarios - Cadastrar um beneficiário
 GET /api/beneficiarios - Listar todos os beneficiários
 GET /api/beneficiarios/{id} - Obter um beneficiário por ID
 PUT /api/beneficiarios/{id} - Atualizar um beneficiário
 DELETE /api/beneficiarios/{id} - Remover um beneficiário
+GET api/documentos/beneficiario/{id} Obter documetos de um beneficiario.
 
 cd ekan
 mvn spring-boot:run
